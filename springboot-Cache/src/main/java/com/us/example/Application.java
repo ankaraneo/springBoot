@@ -11,11 +11,16 @@ import static org.springframework.boot.SpringApplication.*;
  * Created by yangyibo on 17/1/13.
  */
 
-@ComponentScan(basePackages ="com.us.example")
+//@ComponentScan(basePackages = "com.us.example")
 @SpringBootApplication
 @EnableCaching
 public class Application {
+
+
+
+
     public static void main(String[] args) {
+        System.out.print("hello");
         ConfigurableApplicationContext run = run(Application.class, args);
     }
 
